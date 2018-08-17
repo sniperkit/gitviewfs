@@ -1,16 +1,23 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package gitfstree
 
 import (
 	"fmt"
-	"github.com/josh-newman/gitviewfs/gitviewfs/fserror"
-	"github.com/josh-newman/gitviewfs/gitviewfs/fstree"
+	"os"
+	"strings"
+
 	"github.com/pkg/errors"
 	"gopkg.in/src-d/go-git.v4"
 	"gopkg.in/src-d/go-git.v4/plumbing"
 	"gopkg.in/src-d/go-git.v4/plumbing/filemode"
 	"gopkg.in/src-d/go-git.v4/plumbing/object"
-	"os"
-	"strings"
+
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fserror"
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fstree"
 )
 
 func New(repo *git.Repository) (fstree.Node, error) {

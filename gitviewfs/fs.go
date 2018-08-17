@@ -1,18 +1,25 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package gitviewfs
 
 import (
-	"github.com/hanwen/go-fuse/fuse"
-	"github.com/hanwen/go-fuse/fuse/nodefs"
-	"github.com/hanwen/go-fuse/fuse/pathfs"
-	"github.com/josh-newman/gitviewfs/gitviewfs/fserror"
-	"github.com/josh-newman/gitviewfs/gitviewfs/fstree"
-	"github.com/josh-newman/gitviewfs/gitviewfs/gitfstree"
-	"gopkg.in/src-d/go-git.v4"
-	"gopkg.in/src-d/go-git.v4/plumbing/filemode"
 	"io/ioutil"
 	"log"
 	"os"
 	"strings"
+
+	"github.com/hanwen/go-fuse/fuse"
+	"github.com/hanwen/go-fuse/fuse/nodefs"
+	"github.com/hanwen/go-fuse/fuse/pathfs"
+	"gopkg.in/src-d/go-git.v4"
+	"gopkg.in/src-d/go-git.v4/plumbing/filemode"
+
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fserror"
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fstree"
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/gitfstree"
 )
 
 type gitviewfs struct {

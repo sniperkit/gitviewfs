@@ -1,7 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package fserror
 
 import (
 	"fmt"
+
 	"github.com/hanwen/go-fuse/fuse"
 )
 

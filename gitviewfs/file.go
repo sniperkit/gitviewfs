@@ -1,12 +1,19 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package gitviewfs
 
 import (
-	"github.com/hanwen/go-fuse/fuse"
-	"github.com/hanwen/go-fuse/fuse/nodefs"
-	"github.com/josh-newman/gitviewfs/gitviewfs/fstree"
 	"io"
 	"io/ioutil"
 	"log"
+
+	"github.com/hanwen/go-fuse/fuse"
+	"github.com/hanwen/go-fuse/fuse/nodefs"
+
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fstree"
 )
 
 type file struct {

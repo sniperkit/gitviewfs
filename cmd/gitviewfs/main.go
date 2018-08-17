@@ -1,14 +1,21 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
 	"flag"
+	"log"
+
 	"github.com/hanwen/go-fuse/fuse"
 	"github.com/hanwen/go-fuse/fuse/nodefs"
 	"github.com/hanwen/go-fuse/fuse/pathfs"
-	"github.com/josh-newman/gitviewfs/gitviewfs"
 	"github.com/pkg/errors"
 	"gopkg.in/src-d/go-git.v4"
-	"log"
+
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs"
 )
 
 var debug = flag.Bool("debug", false, "enable debug logging")

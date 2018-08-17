@@ -1,8 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package fstree
 
 import (
-	"github.com/josh-newman/gitviewfs/gitviewfs/fserror"
 	"gopkg.in/src-d/go-git.v4/plumbing/object"
+
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fserror"
 )
 
 type Node interface{}

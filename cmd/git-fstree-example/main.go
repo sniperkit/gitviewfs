@@ -1,20 +1,27 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
 	"bufio"
 	"fmt"
-	"github.com/josh-newman/gitviewfs/gitviewfs/fstree"
-	"github.com/josh-newman/gitviewfs/gitviewfs/gitfstree"
-	"github.com/pkg/errors"
-	"gopkg.in/src-d/go-git.v4"
-	"gopkg.in/src-d/go-git.v4/plumbing/filemode"
-	"gopkg.in/src-d/go-git.v4/plumbing/object"
 	"io"
 	"log"
 	"os"
 	"sort"
 	"strings"
 	"unicode"
+
+	"github.com/pkg/errors"
+	"gopkg.in/src-d/go-git.v4"
+	"gopkg.in/src-d/go-git.v4/plumbing/filemode"
+	"gopkg.in/src-d/go-git.v4/plumbing/object"
+
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fstree"
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/gitfstree"
 )
 
 func main() {
