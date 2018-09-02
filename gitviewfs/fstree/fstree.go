@@ -6,9 +6,8 @@ Sniperkit-Bot
 package fstree
 
 import (
-	"gopkg.in/src-d/go-git.v4/plumbing/object"
-
 	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fserror"
+	"gopkg.in/src-d/go-git.v4/plumbing/object"
 )
 
 type Node interface{}

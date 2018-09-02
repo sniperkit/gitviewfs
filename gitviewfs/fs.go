@@ -14,12 +14,11 @@ import (
 	"github.com/hanwen/go-fuse/fuse"
 	"github.com/hanwen/go-fuse/fuse/nodefs"
 	"github.com/hanwen/go-fuse/fuse/pathfs"
-	"gopkg.in/src-d/go-git.v4"
-	"gopkg.in/src-d/go-git.v4/plumbing/filemode"
-
 	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fserror"
 	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fstree"
 	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/gitfstree"
+	"gopkg.in/src-d/go-git.v4"
+	"gopkg.in/src-d/go-git.v4/plumbing/filemode"
 )
 
 type gitviewfs struct {

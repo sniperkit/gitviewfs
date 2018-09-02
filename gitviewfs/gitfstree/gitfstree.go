@@ -11,13 +11,12 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fserror"
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fstree"
 	"gopkg.in/src-d/go-git.v4"
 	"gopkg.in/src-d/go-git.v4/plumbing"
 	"gopkg.in/src-d/go-git.v4/plumbing/filemode"
 	"gopkg.in/src-d/go-git.v4/plumbing/object"
-
-	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fserror"
-	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fstree"
 )
 
 func New(repo *git.Repository) (fstree.Node, error) {

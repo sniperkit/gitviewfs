@@ -16,12 +16,11 @@ import (
 	"unicode"
 
 	"github.com/pkg/errors"
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fstree"
+	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/gitfstree"
 	"gopkg.in/src-d/go-git.v4"
 	"gopkg.in/src-d/go-git.v4/plumbing/filemode"
 	"gopkg.in/src-d/go-git.v4/plumbing/object"
-
-	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fstree"
-	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/gitfstree"
 )
 
 func main() {

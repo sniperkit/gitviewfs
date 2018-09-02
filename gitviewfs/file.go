@@ -12,7 +12,6 @@ import (
 
 	"github.com/hanwen/go-fuse/fuse"
 	"github.com/hanwen/go-fuse/fuse/nodefs"
-
 	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs/fstree"
 )
 

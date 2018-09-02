@@ -13,9 +13,8 @@ import (
 	"github.com/hanwen/go-fuse/fuse/nodefs"
 	"github.com/hanwen/go-fuse/fuse/pathfs"
 	"github.com/pkg/errors"
-	"gopkg.in/src-d/go-git.v4"
-
 	"github.com/sniperkit/snk.fork.gitviewfs/gitviewfs"
+	"gopkg.in/src-d/go-git.v4"
 )
 
 var debug = flag.Bool("debug", false, "enable debug logging")
